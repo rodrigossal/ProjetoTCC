@@ -1,0 +1,40 @@
+PODS:
+  - AudioKit (4.4.0):
+    - AudioKit/Core (= 4.4.0)
+    - AudioKit/UI (= 4.4.0)
+  - AudioKit/Core (4.4.0)
+  - AudioKit/UI (4.4.0)
+  - SwifterSwift (4.5.0):
+    - SwifterSwift/AppKit (= 4.5.0)
+    - SwifterSwift/CoreGraphics (= 4.5.0)
+    - SwifterSwift/CoreLocation (= 4.5.0)
+    - SwifterSwift/Foundation (= 4.5.0)
+    - SwifterSwift/MapKit (= 4.5.0)
+    - SwifterSwift/SpriteKit (= 4.5.0)
+    - SwifterSwift/SwiftStdlib (= 4.5.0)
+    - SwifterSwift/UIKit (= 4.5.0)
+  - SwifterSwift/AppKit (4.5.0)
+  - SwifterSwift/CoreGraphics (4.5.0)
+  - SwifterSwift/CoreLocation (4.5.0)
+  - SwifterSwift/Foundation (4.5.0)
+  - SwifterSwift/MapKit (4.5.0)
+  - SwifterSwift/SpriteKit (4.5.0)
+  - SwifterSwift/SwiftStdlib (4.5.0)
+  - SwifterSwift/UIKit (4.5.0)
+
+DEPENDENCIES:
+  - AudioKit (~> 4.2)
+  - SwifterSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AudioKit
+    - SwifterSwift
+
+SPEC CHECKSUMS:
+  AudioKit: 79c2b23cd00beb656938aa0b81b614391f17eaa3
+  SwifterSwift: 45339f9100181f0ca1d9b46248e45d0879a48596
+
+PODFILE CHECKSUM: 3fcf1f0db19b9cdce7037f43691ff1ad1a4df5aa
+
+COCOAPODS: 1.5.3
