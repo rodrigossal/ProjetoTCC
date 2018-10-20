@@ -20,7 +20,7 @@
 		F5A409A021344D5F00FB697F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4099F21344D5F00FB697F /* MainViewController.swift */; };
 		F5A409A52134500E00FB697F /* Exercicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A409A42134500E00FB697F /* Exercicio.swift */; };
 		F5A409A72134B31E00FB697F /* Analisador.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A409A62134B31E00FB697F /* Analisador.swift */; };
-		F5BF91B0215BD3C000B03828 /* metronome.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5BF91AF215BD3C000B03828 /* metronome.wav */; };
+		F5BF91B0215BD3C000B03828 /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5BF91AF215BD3C000B03828 /* click.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		F5A4099F21344D5F00FB697F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F5A409A42134500E00FB697F /* Exercicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercicio.swift; sourceTree = "<group>"; };
 		F5A409A62134B31E00FB697F /* Analisador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analisador.swift; sourceTree = "<group>"; };
-		F5BF91AF215BD3C000B03828 /* metronome.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = metronome.wav; sourceTree = "<group>"; };
+		F5BF91AF215BD3C000B03828 /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 				F5A409A121344FCE00FB697F /* Model */,
 				F577614821262C490061BF66 /* AppDelegate.swift */,
 				F577615521262C4B0061BF66 /* Assets.xcassets */,
-				F5BF91AF215BD3C000B03828 /* metronome.wav */,
+				F5BF91AF215BD3C000B03828 /* click.wav */,
 				F577615721262C4B0061BF66 /* LaunchScreen.storyboard */,
 				F577615A21262C4B0061BF66 /* Info.plist */,
 			);
@@ -199,7 +199,7 @@
 				F577615421262C490061BF66 /* Main.storyboard in Resources */,
 				F577614B21262C490061BF66 /* GameScene.sks in Resources */,
 				F577615621262C4B0061BF66 /* Assets.xcassets in Resources */,
-				F5BF91B0215BD3C000B03828 /* metronome.wav in Resources */,
+				F5BF91B0215BD3C000B03828 /* click.wav in Resources */,
 				F577615921262C4B0061BF66 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

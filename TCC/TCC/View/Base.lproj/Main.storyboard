@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BU7-20-J9A">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,72 +18,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1000111100101010" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oAe-Vh-sPr">
-                                <rect key="frame" x="137" y="225" width="144" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="RoD-wp-W9N">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZq-KN-i7x">
+                                <rect key="frame" x="237" y="76" width="193" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="kXv-xQ-vIS"/>
+                                    <constraint firstAttribute="width" secondItem="eZq-KN-i7x" secondAttribute="height" multiplier="193:107" id="m2W-m2-cKH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
+                                <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Start"/>
                                 <connections>
-                                    <action selector="played:" destination="aah-V5-AMT" eventType="editingDidEnd" id="daM-Ks-mpf"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCy-eV-u7U">
-                                <rect key="frame" x="431" y="114" width="165" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Executa"/>
-                                <connections>
-                                    <action selector="compara:" destination="BU7-20-J9A" eventType="touchUpInside" id="UDo-Wf-t0Y"/>
+                                    <segue destination="BV1-FR-VrT" kind="show" id="guX-xx-gPo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wrong Training" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vex-yp-XEm">
-                                <rect key="frame" x="452" y="263" width="123" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exercício proposto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYP-10-MZ6">
-                                <rect key="frame" x="138" y="8" width="142" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exercício executado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdK-0r-ks6">
-                                <rect key="frame" x="133" y="196" width="153" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0100101101001010" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ydf-eh-4wt">
-                                <rect key="frame" x="139" y="31" width="137" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correto" translatesAutoresizingMaskIntoConstraints="NO" id="ETL-t6-eaS">
-                                <rect key="frame" x="38" y="69" width="345" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="errado" translatesAutoresizingMaskIntoConstraints="NO" id="K7d-3f-GYg">
-                                <rect key="frame" x="52" y="263" width="327" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RoD-wp-W9N" firstAttribute="leading" secondItem="pP9-1j-anS" secondAttribute="leading" id="2kL-yz-QS5"/>
+                            <constraint firstItem="eZq-KN-i7x" firstAttribute="centerX" secondItem="pP9-1j-anS" secondAttribute="centerX" id="A4l-4k-RWe"/>
+                            <constraint firstItem="eZq-KN-i7x" firstAttribute="leading" secondItem="RoD-wp-W9N" secondAttribute="trailing" constant="-430" id="AIZ-U9-BAg"/>
+                            <constraint firstItem="RoD-wp-W9N" firstAttribute="bottom" secondItem="pP9-1j-anS" secondAttribute="bottom" id="LL6-Lm-OkD"/>
+                            <constraint firstItem="RoD-wp-W9N" firstAttribute="trailing" secondItem="pP9-1j-anS" secondAttribute="trailing" id="cr0-L5-d6x"/>
+                            <constraint firstItem="eZq-KN-i7x" firstAttribute="top" secondItem="pP9-1j-anS" secondAttribute="top" constant="76" id="hZ9-LG-dO4"/>
+                            <constraint firstItem="RoD-wp-W9N" firstAttribute="top" secondItem="pP9-1j-anS" secondAttribute="top" id="kmL-f3-kwe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pP9-1j-anS"/>
                     </view>
-                    <connections>
-                        <outlet property="aSerTocado" destination="Ydf-eh-4wt" id="77V-KU-A9I"/>
-                        <outlet property="resultado" destination="vex-yp-XEm" id="KLv-uJ-Z1q"/>
-                        <outlet property="tocado" destination="oAe-Vh-sPr" id="LXF-e4-5t6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F0M-Cg-0s8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="aah-V5-AMT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-690.40479760119945" y="98.400000000000006"/>
         </scene>
@@ -104,7 +69,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="correto" width="650" height="196"/>
-        <image name="errado" width="524" height="196"/>
+        <image name="Background" width="1334" height="750"/>
     </resources>
 </document>
